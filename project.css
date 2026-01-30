@@ -1,0 +1,352 @@
+* {
+    margin: 0px;
+    /*puro page er margin and padding */
+    padding: 0px;
+}
+
+
+header {
+    background-color: rgb(201, 218, 223);
+    height: 300px;
+}
+
+.head-picture {
+    /*লাইব্রেরি লোগোর জন্য ডিব*/
+
+    position: relative;
+    /*নিজের জায়গা থেকে ১০ পিক্সেল পেডিং নিবে*/
+    padding: 10px;
+    /*পেডিং যত পিক্সেল দেওয়া হবে চারপাশ থেকে ততো জায়গা নিবে*/
+}
+
+.picture {
+    /*লাইব্রেরি লোগোর পিক*/
+    height: 40px;
+    width: 40px;
+    padding: 20px;
+    position: absolute;
+    /*বুঝতাছিনা*/
+    border-radius: 25px;
+}
+
+#name {
+    color: black;
+    background-color: antiquewhite;
+    /* background-color: white; */
+    height: 0px;
+}
+
+
+.search {
+    border: 3px solid white;
+}
+
+.search>input {
+    width: 150px;
+    height: 25px;
+    /* border-radius: 10px; */
+    /* border: 2px solid; */
+}
+
+.search>button {
+    width: 60px;
+    height: 25px;
+    /* border: 10px solid white; */
+    /* border-radius: 10px; */
+}
+
+
+
+.picture:hover {
+    height: 50px;
+    width: 50px;
+    padding: 20px;
+    position: absolute;
+    border-radius: 25px;
+}
+
+.loging {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: 10px;
+    top: 30px;
+}
+
+
+
+.log {
+    text-decoration: none;
+    background-color: rgb(99, 154, 170);
+    padding: 4px;
+    margin: 2px;
+    border: 2px solid lightblue;
+    border-radius: 6px;
+    color: white;
+}
+
+
+.log:hover {
+    background-color: rgb(243, 241, 240);
+    border: 2px solid rgb(192, 183, 170);
+    border-radius: 6px;
+    color: black;
+}
+
+
+.h-sec1 {
+    height: 200px;
+}
+
+.h-sec2 {
+    height: 100px;
+}
+
+/*library-name*/
+nav {
+    width: 70%;
+    height: 70%;
+    margin: auto;
+
+}
+
+nav>.writer-name {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: red;
+    /* gap: 5px; */
+}
+
+/* ul {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    background-color: antiquewhite;
+    /* justify-content: space-around; */
+    /* justify-content: space-evenly; */
+/* }  */
+
+
+nav>ul>li {
+    list-style: none;
+    padding: 8px;
+    background-color: rgb(99, 154, 170);
+    border: 1px solid rgb(175, 190, 199);
+    font-size: 10px;
+    width: 65%;
+}
+
+
+nav>ul>li>a:hover {
+    color: black;
+    /* background-color: white; */
+}
+
+nav>ul>li:hover {
+    width: 70%;
+    height: 70%;
+    background-color: rgb(247, 245, 243);
+    border: 2px solid rgb(221, 235, 239);
+    border-radius: 9px;
+    color: black;
+}
+
+
+
+#name {
+    text-align: center;
+    padding: 80px;
+}
+
+
+.search {
+    font-size: 0px;
+    position: absolute;
+    left: 70%;
+    top: 30px;
+    border: 1px solid white;
+    background-color: white;
+    height: 20px;
+}
+
+
+
+/*Book list start*/
+.book-list-1 {
+    background-color: rgb(249, 241, 231);
+    display: flex;
+    height: 250px;
+    margin: auto;
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+/*1st book list er picture*/
+.book-list-1 img {
+    height: 90%;
+    width: 97%;
+}
+
+.book-list-1 img:hover {
+    height: 100%;
+    width: 100%;
+}
+
+
+
+.kaji {
+    width: 12.5%;
+    padding: 10px;
+    /* border: 4px ridge green; */
+}
+
+
+/*link ar under-line delete*/
+a {
+    /*এখনি পড়ুন লেখাগুলার কালার পরিবর্তন করা হয়েছে*/
+    text-decoration: none;
+    color: black;
+    padding-top: 8px;
+}
+
+h6 {
+    text-align: center;
+}
+
+/*read hover*/
+
+h6:hover {
+    background-color: gray;
+    color: white;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+/*book list 2 start*/
+.book-list-2 {
+    background-color: rgb(249, 241, 231);
+    display: flex;
+    height: 250px;
+    margin: auto;
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.book-list-2 img {
+    height: 90%;
+    width: 97%;
+}
+
+.book-list-2 img:hover {
+    height: 100%;
+    width: 100%;
+}
+
+.robi {
+    width: 12.5%;
+    padding: 10px;
+}
+
+
+/*book list 2*/
+
+.book-list-3 {
+    background-color: rgb(249, 241, 231);
+    display: flex;
+    height: 250px;
+    margin: auto;
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.book-list-3 img {
+    height: 90%;
+    width: 97%;
+}
+
+.book-list-3 img:hover {
+    height: 100%;
+    width: 100%;
+}
+
+.nondo {
+    width: 12.5%;
+    padding: 10px;
+    /* border: 4px ridge green; */
+}
+
+
+/*book list 4*/
+
+.book-list-4 {
+    background-color: rgb(249, 241, 231);
+    display: flex;
+    height: 250px;
+    margin: auto;
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.book-list-4 img {
+    height: 90%;
+    width: 97%;
+}
+
+.book-list-4 img:hover {
+    height: 100%;
+    width: 100%;
+}
+
+.suku {
+    width: 12.5%;
+    padding: 10px;
+}
+
+
+footer {
+    /* width: 40%; */
+    /* margin: auto; */
+    background-color: gray;
+    height: 300px;
+}
+
+.ftr-main {
+    /* background-color: ; */
+    margin: auto;
+    /* width: 70%;
+    height: 100%; */
+    display: flex;
+    padding: 50px;
+    position: absolute;
+    right: 50px;
+    /* background-color: yellow; */
+}
+
+.contact-1 {
+    padding: 40px;
+}
+
+.contact-2 {
+    padding: 40px;
+}
+
+i {
+    padding: 10px 10px 0px 0px;
+}
+
+.ftr-logo>li {
+    list-style: none;
+}
+
+h3 {
+    padding: 0px;
+}
