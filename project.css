@@ -1,39 +1,40 @@
 * {
     margin: 0px;
-    /*puro page er margin and padding */
     padding: 0px;
 }
 
 
 header {
-    background-color: rgb(201, 218, 223);
     height: 300px;
 }
 
 .head-picture {
-    /*লাইব্রেরি লোগোর জন্য ডিব*/
 
     position: relative;
-    /*নিজের জায়গা থেকে ১০ পিক্সেল পেডিং নিবে*/
     padding: 10px;
-    /*পেডিং যত পিক্সেল দেওয়া হবে চারপাশ থেকে ততো জায়গা নিবে*/
 }
 
 .picture {
-    /*লাইব্রেরি লোগোর পিক*/
     height: 40px;
     width: 40px;
     padding: 20px;
     position: absolute;
-    /*বুঝতাছিনা*/
     border-radius: 25px;
 }
 
 #name {
     color: black;
-    background-color: antiquewhite;
-    /* background-color: white; */
-    height: 0px;
+    font-size: 25px;
+    /* padding-top: 50px; */
+    font-family:'Courier New', Courier, monospace;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif; */
 }
 
 
@@ -44,26 +45,16 @@ header {
 .search>input {
     width: 150px;
     height: 25px;
-    /* border-radius: 10px; */
-    /* border: 2px solid; */
 }
 
 .search>button {
     width: 60px;
     height: 25px;
-    /* border: 10px solid white; */
-    /* border-radius: 10px; */
 }
 
 
 
-.picture:hover {
-    height: 50px;
-    width: 50px;
-    padding: 20px;
-    position: absolute;
-    border-radius: 25px;
-}
+
 
 .loging {
     display: flex;
@@ -77,10 +68,9 @@ header {
 
 .log {
     text-decoration: none;
-    background-color: rgb(99, 154, 170);
+    background-color: gray;
     padding: 4px;
     margin: 2px;
-    border: 2px solid lightblue;
     border-radius: 6px;
     color: white;
 }
@@ -99,57 +89,32 @@ header {
 }
 
 .h-sec2 {
-    height: 100px;
+    height: 60px;
 }
 
 /*library-name*/
-nav {
-    width: 70%;
-    height: 70%;
-    margin: auto;
-
-}
 
 nav>.writer-name {
     display: flex;
+    gap: 30px;
     flex-direction: row;
     justify-content: center;
-    color: red;
-    /* gap: 5px; */
 }
 
-/* ul {
-    display: flex;
-    gap: 10px;
-    padding: 10px;
-    background-color: antiquewhite;
-    /* justify-content: space-around; */
-    /* justify-content: space-evenly; */
-/* }  */
+
 
 
 nav>ul>li {
     list-style: none;
     padding: 8px;
-    background-color: rgb(99, 154, 170);
-    border: 1px solid rgb(175, 190, 199);
-    font-size: 10px;
-    width: 65%;
 }   
 
 
-nav>ul>li>a:hover {
-    color: black;
-    /* background-color: white; */
-}
+
 
 nav>ul>li:hover {
-    width: 70%;
-    height: 70%;
     background-color: rgb(247, 245, 243);
-    border: 2px solid rgb(221, 235, 239);
     border-radius: 9px;
-    color: black;
 }
 
 
@@ -165,177 +130,128 @@ nav>ul>li:hover {
     position: absolute;
     left: 70%;
     top: 30px;
-    border: 1px solid white;
-    background-color: white;
+
     height: 20px;
 }
 
 
 
+
+
 /*Book list start*/
+
+
+
 .book-list-1 {
-    background-color: rgb(249, 241, 231);
+    /* display: flex; */
     display: flex;
+    gap: 20px;
     height: 250px;
     margin: auto;
-    padding: 10px;
     padding-left: 40px;
     padding-right: 40px;
+    margin-bottom: 20px;
+}
+.book{
+    border: 1px solid gray;
+    border-radius: 5px;
 }
 
 /*1st book list er picture*/
 .book-list-1 img {
+    border-radius: 5px;
     height: 90%;
     width: 97%;
 }
 
-.book-list-1 img:hover {
-    height: 100%;
-    width: 100%;
-}
 
-
-
-.kaji {
+.book {
     width: 12.5%;
     padding: 10px;
-    /* border: 4px ridge green; */
 }
 
 
 /*link ar under-line delete*/
 a {
-    /*এখনি পড়ুন লেখাগুলার কালার পরিবর্তন করা হয়েছে*/
     text-decoration: none;
     color: black;
     padding-top: 8px;
 }
 
+
 h6 {
     text-align: center;
 }
 
-/*read hover*/
 
-h6:hover {
-    background-color: gray;
+
+
+
+h5 {
+    background-color: rgb(246, 240, 240);
+    color: black;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+h5:hover {
+    background-color: rgb(172, 169, 169);
     color: white;
     border-radius: 5px;
+    text-align: center;
 }
 
 
-
-
-
-
-/*book list 2 start*/
-.book-list-2 {
-    background-color: rgb(249, 241, 231);
-    display: flex;
-    height: 250px;
+.read{
+    width: 95%;
     margin: auto;
-    padding: 10px;
-    padding-left: 40px;
-    padding-right: 40px;
+    height: 40px;
 }
-
-.book-list-2 img {
-    height: 90%;
-    width: 97%;
-}
-
-.book-list-2 img:hover {
-    height: 100%;
-    width: 100%;
-}
-
-.robi {
-    width: 12.5%;
-    padding: 10px;
+.read-btn{
+    float: right;
+    padding: 3px 7px 3px 7px;
 }
 
 
-/*book list 2*/
-
-.book-list-3 {
-    background-color: rgb(249, 241, 231);
-    display: flex;
-    height: 250px;
-    margin: auto;
-    padding: 10px;
-    padding-left: 40px;
-    padding-right: 40px;
-}
-
-.book-list-3 img {
-    height: 90%;
-    width: 97%;
-}
-
-.book-list-3 img:hover {
-    height: 100%;
-    width: 100%;
-}
-
-.nondo {
-    width: 12.5%;
-    padding: 10px;
-    /* border: 4px ridge green; */
-}
 
 
-/*book list 4*/
-
-.book-list-4 {
-    background-color: rgb(249, 241, 231);
-    display: flex;
-    height: 250px;
-    margin: auto;
-    padding: 10px;
-    padding-left: 40px;
-    padding-right: 40px;
-}
-
-.book-list-4 img {
-    height: 90%;
-    width: 97%;
-}
-
-.book-list-4 img:hover {
-    height: 100%;
-    width: 100%;
-}
-
-.suku {
-    width: 12.5%;
-    padding: 10px;
-}
-
-
+/* footer section */
+/* footer section */
+/* footer section */
+/* footer section */
 footer {
-    /* width: 40%; */
-    /* margin: auto; */
     background-color: gray;
     height: 300px;
+    margin: auto;
+    padding-top: 50px;
+    border-top: 30px;
 }
 
 .ftr-main {
-    /* background-color: ; */
-    margin: auto;
-    /* width: 70%;
-    height: 100%; */
     display: flex;
-    padding: 50px;
-    position: absolute;
-    right: 50px;
-    /* background-color: yellow; */
+    justify-content: center;
 }
 
-.contact-1 {
+
+
+.quick-link{
+    padding: 40px;
+    gap: 100px;
+}
+.quick-link > h3{
+    padding-bottom: 7px;
+}
+.quick-link > p{
+    padding: 3px;
+}
+.contact-information {
     padding: 40px;
 }
 
-.contact-2 {
+
+/* social media icon section */
+.contact-social {
     padding: 40px;
 }
 
@@ -345,8 +261,39 @@ i {
 
 .ftr-logo>li {
     list-style: none;
+    display: flex;
+    flex-direction: column;
 }
 
-h3 {
-    padding: 0px;
+.submit{
+    padding: 40px;
 }
+.submit{
+    display: flex;
+    flex-direction: column;
+}
+.comment{
+    height: 50px;
+    width: 200px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    border: 2px solid white;
+    border-radius: 2px;
+
+}
+
+.submit > button{
+    font-size: 20px;
+    padding: 10px;
+    width: 100px;
+    background-color: orange;
+    border: none;
+    border-radius: 4px;
+
+}
+button > h4{
+    text-align: center;
+}
+
+
+
